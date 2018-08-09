@@ -5,3 +5,7 @@ ul {
 .stars {
   color: gold;
 }
+
+.card {
+  background-color: hsl(180, 100%, 97%);
+}
