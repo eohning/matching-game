@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Diwali Matching Game</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eileah Ohning">
@@ -11,11 +12,13 @@
     <meta name="keywords" content="matching, game, free, cards, interactive, Diwali">
 </head>
 <body>
-  <main>
+
+  <main class="container">
     <header>
       <h1>Diwali Matching Game</h1>
     </header>
-    <section>
+
+    <section class="score-panel">
       <ul class="stars">
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
@@ -24,16 +27,14 @@
             <li><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<p id="moveCounter">
             <span class="moves">0</span> Moves
-          </p>
 
           <div class="restart">
-            <i class="fa fa-repeat"></i>
+        		<i class="fa fa-repeat"></i>
         	</div>
     </section>
-    <section>
-      <ul>
+
+      <ul class="deck">
         <li class=card>
           <img src="img/if_diwali_gifts_2670653.png" alt="Gift" />
         </li>
@@ -83,7 +84,6 @@
           <img src="img/if_shree_2670640.png" alt="Shree"/>
         </li>
       </ul>
-    </section>
   </main>
 
 <script src="js/app.js"></script>
