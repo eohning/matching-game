@@ -8,4 +8,9 @@ ul {
 
 .card {
   background-color: hsl(180, 100%, 97%);
+  max-width: 144px;
+}
+
+main {
+  background-color: #ff5050;
 }
