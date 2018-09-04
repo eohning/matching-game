@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eileah Ohning">
     <meta name="description" content="Free visual matching game">
@@ -13,80 +14,109 @@
 </head>
 <body>
 
-  <main class="container">
-    <header>
+    <header class="box">
       <h1>Diwali Matching Game</h1>
+
+      <section class="score-panel">
+        <div class="score-container">
+          <ul class="stars">
+          		<li><i class="star fa fa-star"></i></li>
+          		<li><i class="star fa fa-star"></i></li>
+          		<li><i class="star fa fa-star"></i></li>
+              <li><i class="star fa fa-star"></i></li>
+              <li><i class="star fa fa-star"></i></li>
+          </ul>
+        </div>
+
+        <div class="score-container">
+          <span class="moves"></span> Moves
+        </div>
+
+        <div class="score-container">
+          <time class="timer">00:00</time>
+        </div>
+
+        <div class="restart">
+          <i class="fa fa-repeat"></i>
+        </div>
+      </section>
     </header>
 
-    <section class="score-panel">
-      <ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-            <li><i class="fa fa-star"></i></li>
-            <li><i class="fa fa-star"></i></li>
-      </ul>
-
-          <span class="moves"></span>
-
-          <time class="clock">00:00</time>
-
-          <div class="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
-    </section>
-
+    <main class="box">
       <ul class="deck">
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
-        <li class=card data-card="">
-          <img src="" alt="" />
+        <li class="cardBack">
+          <img class="card" src="" alt="" />
         </li>
       </ul>
   </main>
+
+  <div class="summary box">
+    <aside class="summary-message">
+      <h2>You did it!!</h2>
+      <div class="score-summary">
+        <span class="st">Stars: <span class="score-stars"></span></span>
+      </div>
+      <div class="score-summary">
+        <span class="ti">Time: <time class="score-time">00:00</time></span>
+      </div>
+      <div class="score-summary">
+        <span class="mo">Moves: <span class="score-moves"></span></span>
+      </div>
+      <div class="score-summary">
+        <p class="co"><span class="comment"></span></p>
+      </div>
+      <div class="play-again">
+        <button class="replay">
+            Play again!
+        </button>
+      </div>
+    </aside>
+  </div>
 
 <script src="js/app.js"></script>
 </body>
